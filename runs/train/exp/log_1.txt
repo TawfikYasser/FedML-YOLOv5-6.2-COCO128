@@ -1,0 +1,1023 @@
+0: net_dataidx_map trainer: [ 40  24  86  51   8 108 127  96  73   7  60  10  89  94  30  33   2  59  50  26  22 101  48  68 121 122  91  16  90 118  13  99  76  43  15  93  95  45   3 100   6  92  52  97  62 111  54  85 125  27  18 105  11  66  75  63  84  61   1  56  78 110  42  41]
+contribution_alg is not set, assessor is None
+running
+communication backend is alive (loop_forever, sender 0 to receiver 0)
+Cannot handle connection ready.
+receive_message. msg_type = 1, sender_id = 0, receiver_id = 1
+set_model_params
+#######training########### round_id = 0
+Start training on Trainer 0
+Hyperparameters: {'lr0': 0.01, 'lrf': 0.2, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0}, Args: <fedml.arguments.Arguments object at 0x70bda0396170>
+Optimizer groups: 60 .bias, 60 conv.weight, 57 other
+Epoch gpu_mem box obj cls total targets img_size time
+Trainer_ID: 0, Epoch: 0
+       0/0        0G   0.08858    0.0979   0.07338        17       640
+       0/0        0G    0.1116    0.1352   0.05906         1       640
+       0/0        0G     0.113    0.1139   0.06488         6       640
+       0/0        0G    0.1145    0.0929    0.0725         3       640
+       0/0        0G    0.1058   0.08335   0.07196         4       640
+       0/0        0G    0.1078   0.08217   0.07294        10       640
+       0/0        0G    0.1085   0.07645   0.07588         8       640
+       0/0        0G    0.1084   0.07027    0.0748         2       640
+       0/0        0G   0.09998   0.06402   0.06993         1       640
+       0/0        0G    0.1027   0.06097   0.06978        19       640
+       0/0        0G     0.105   0.05926   0.06966        14       640
+       0/0        0G    0.1079   0.05689   0.06685         8       640
+       0/0        0G    0.1086   0.06182   0.06501        14       640
+       0/0        0G    0.1096   0.06268    0.0653        12       640
+       0/0        0G    0.1067   0.06009   0.06445         2       640
+       0/0        0G    0.1079   0.05925   0.06467         7       640
+       0/0        0G    0.1087   0.06129   0.06448        15       640
+       0/0        0G    0.1051   0.05828   0.06286         1       640
+       0/0        0G    0.1024   0.05736      0.06         2       640
+       0/0        0G    0.1031   0.05533   0.05952         2       640
+       0/0        0G    0.1036    0.0552   0.05826         6       640
+       0/0        0G    0.1025   0.05347   0.05693         2       640
+       0/0        0G    0.1035   0.05225   0.05516         4       640
+       0/0        0G    0.1003   0.05071   0.05303         1       640
+       0/0        0G   0.09986   0.04938   0.05171         4       640
+       0/0        0G    0.1006   0.04905   0.05109         7       640
+       0/0        0G    0.1014   0.04816   0.05073         3       640
+       0/0        0G    0.1024   0.04863   0.04956         9       640
+       0/0        0G    0.1033    0.0485    0.0485         8       640
+       0/0        0G    0.1038   0.04899    0.0476        11       640
+       0/0        0G    0.1045   0.04992   0.04649        11       640
+       0/0        0G     0.105   0.04916   0.04596         2       640
+       0/0        0G    0.1019   0.04783   0.04457         0       640
+       0/0        0G    0.1001   0.04686   0.04342         3       640
+       0/0        0G    0.1008   0.04706   0.04359         8       640
+       0/0        0G    0.1012   0.04652   0.04258         3       640
+       0/0        0G    0.1015   0.04635   0.04164         9       640
+       0/0        0G     0.102   0.04895    0.0412        24       640
+       0/0        0G     0.103   0.04793    0.0402         2       640
+       0/0        0G    0.1025   0.04718   0.03931         3       640
+       0/0        0G    0.1019   0.04658   0.03852         4       640
+       0/0        0G   0.09951   0.04562    0.0376         0       640
+       0/0        0G    0.1003    0.0462   0.03694        20       640
+       0/0        0G    0.0989   0.04558   0.03614         3       640
+       0/0        0G    0.0995   0.04516   0.03549         4       640
+       0/0        0G       0.1   0.04636   0.03486        17       640
+       0/0        0G    0.1001   0.04653   0.03454         5       640
+       0/0        0G    0.1006   0.04611   0.03426         5       640
+       0/0        0G    0.1002   0.04545    0.0337         2       640
+       0/0        0G    0.1004   0.04511   0.03314         4       640
+       0/0        0G   0.09981   0.04447   0.03258         1       640
+       0/0        0G   0.09986   0.04389    0.0321         2       640
+       0/0        0G    0.0993   0.04327   0.03159         1       608
+       0/0        0G   0.09901   0.04271   0.03105         2       544
+       0/0        0G   0.09935   0.04287   0.03069         8       512
+       0/0        0G   0.09882    0.0423   0.03023         1       480
+       0/0        0G   0.09898   0.04277   0.03026        10       480
+       0/0        0G   0.09868   0.04256   0.02994         3       448
+       0/0        0G   0.09801    0.0425   0.02956         3       448
+       0/0        0G   0.09736   0.04222   0.02916         3       448
+       0/0        0G   0.09705   0.04182   0.02884         2       448
+       0/0        0G   0.09677   0.04158   0.02844         4       448
+       0/0        0G   0.09582   0.04108   0.02803         1       384
+       0/0        0G   0.09608   0.04085   0.02782         2       384
+Trainer 0 epoch 0 box: 0.09608481079339981 obj: 0.04085405543446541 cls: 0.027816982939839363 total: 0.16475585103034973 time: 118.09855031967163
+####################
+Trainer 0 epoch 0 time: 118.104975938797s batch_num: 63 speed: 1.8746822977822923 s/batch
+####################
+End training on Trainer 0
+Uncaught exception
+Traceback (most recent call last):
+  File "/home/tawfik/SSDData/DeFeC3/coding/fedml/fedml-cv-object-detection/YOLOv5COCO128/main_fedml_object_detection.py", line 18, in <module>
+    fedml_runner = FedMLRunner(args, device, dataset, model, trainer, aggregator)
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/runner.py", line 51, in __init__
+    self.runner = init_runner_func(
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/runner.py", line 67, in _init_simulation_runner
+    runner = SimulatorMPI(
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/simulation/simulator.py", line 95, in __init__
+    FedML_FedAvg_distributed(
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/simulation/mpi/fedavg/FedAvgAPI.py", line 56, in FedML_FedAvg_distributed
+    init_client(
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/simulation/mpi/fedavg/FedAvgAPI.py", line 141, in init_client
+    client_manager.run()
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/simulation/mpi/fedavg/FedAvgClientManager.py", line 26, in run
+    super().run()
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/core/distributed/fedml_comm_manager.py", line 28, in run
+    self.com_manager.handle_receive_message()
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/core/distributed/communication/mpi/com_manager.py", line 90, in handle_receive_message
+    self.notify(msg_params)
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/core/distributed/communication/mpi/com_manager.py", line 126, in notify
+    observer.receive_message(msg_type, msg_params)
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/core/distributed/fedml_comm_manager.py", line 45, in receive_message
+    handler_callback_func(msg_params)
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/simulation/mpi/fedavg/FedAvgClientManager.py", line 44, in handle_message_init
+    self.__train()
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/simulation/mpi/fedavg/FedAvgClientManager.py", line 75, in __train
+    weights, local_sample_num = self.trainer.train(self.args.round_idx)
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/simulation/mpi/fedavg/FedAVGTrainer.py", line 53, in train
+    self.trainer.train(self.train_local, self.device, self.args)
+  File "/home/tawfik/SSDData/DeFeC3/coding/fedml/fedml-cv-object-detection/YOLOv5COCO128/trainer/yolov5_trainer.py", line 182, in train
+    f"train_box_loss": np.float(epoch_loss[-1, 0]),
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/numpy/__init__.py", line 324, in __getattr__
+    raise AttributeError(__former_attrs__[attr])
+AttributeError: module 'numpy' has no attribute 'float'.
+`np.float` was a deprecated alias for the builtin `float`. To avoid this error in existing code, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
+    https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations. Did you mean: 'cfloat'?
+0: net_dataidx_map trainer: [ 40  24  86  51   8 108 127  96  73   7  60  10  89  94  30  33   2  59  50  26  22 101  48  68 121 122  91  16  90 118  13  99  76  43  15  93  95  45   3 100   6  92  52  97  62 111  54  85 125  27  18 105  11  66  75  63  84  61   1  56  78 110  42  41   4  17  38   5  53 116  71   0  34  28  55  35  23  74  31
+ 119  57  98 109  32 107  14 106  19  29  49 104  82 124 126  79  69  80  20 120  72  77  25  37  81 112  46 115  39 102  65  58  12 113  88  70  87  36 114  21  83   9 103 123  67  64 117  47  44]
+contribution_alg is not set, assessor is None
+running
+communication backend is alive (loop_forever, sender 0 to receiver 0)
+Cannot handle connection ready.
+receive_message. msg_type = 1, sender_id = 0, receiver_id = 1
+set_model_params
+#######training########### round_id = 0
+Start training on Trainer 0
+Hyperparameters: {'lr0': 0.01, 'lrf': 0.2, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0}, Args: <fedml.arguments.Arguments object at 0x7e3760e921a0>
+Optimizer groups: 60 .bias, 60 conv.weight, 57 other
+Epoch gpu_mem box obj cls total targets img_size time
+Trainer_ID: 0, Epoch: 0
+       0/0        0G   0.08858    0.0979   0.07338        17       640
+       0/0        0G    0.1116    0.1352   0.05906         1       640
+       0/0        0G    0.1138     0.122   0.07017         7       640
+       0/0        0G    0.1119    0.1105   0.07725         6       640
+       0/0        0G    0.1053   0.09733   0.06925         3       640
+       0/0        0G    0.1064   0.08704    0.0707         3       640
+       0/0        0G    0.1022   0.07997   0.07032         4       640
+       0/0        0G    0.1046   0.07736   0.06991         9       640
+       0/0        0G     0.104   0.07058   0.06525         5       640
+       0/0        0G    0.1021   0.06755   0.06367         8       640
+       0/0        0G    0.1044    0.0649   0.06455         8       640
+       0/0        0G    0.1073   0.06099   0.06133         4       640
+       0/0        0G    0.1012   0.05759   0.05881         1       640
+       0/0        0G    0.1029   0.05767   0.06042        14       640
+       0/0        0G   0.09854   0.05434   0.05796         1       640
+       0/0        0G   0.09633   0.05248   0.05755         2       640
+       0/0        0G   0.09794   0.05484   0.05727        13       640
+       0/0        0G   0.09924   0.05646   0.05679        13       640
+       0/0        0G   0.09958   0.05479   0.05423        16       640
+       0/0        0G    0.1006   0.05508   0.05446         8       640
+       0/0        0G    0.1014   0.05534   0.05465         7       640
+       0/0        0G    0.1006   0.05373   0.05359         2       640
+       0/0        0G    0.1013   0.06448   0.05292        38       640
+       0/0        0G    0.1016    0.0641   0.05235         7       640
+       0/0        0G    0.1018   0.06406   0.05083         6       640
+       0/0        0G    0.1023     0.067   0.05093        19       640
+       0/0        0G    0.1021   0.06505    0.0491         1       640
+       0/0        0G    0.1027   0.06337   0.04821         2       640
+       0/0        0G    0.1005   0.06163   0.04676         2       640
+       0/0        0G    0.1003   0.05997   0.04537         1       640
+       0/0        0G   0.09953   0.05879   0.04403         2       640
+       0/0        0G    0.1002    0.0578   0.04315         2       640
+       0/0        0G    0.1011   0.05875   0.04231        16       640
+       0/0        0G    0.1007   0.05874   0.04155        21       640
+       0/0        0G    0.1016   0.05781   0.04071        12       640
+       0/0        0G    0.1013   0.05673    0.0398         6       640
+       0/0        0G    0.1009   0.05569    0.0396         2       640
+       0/0        0G    0.1014   0.05511   0.03931         5       640
+       0/0        0G    0.1016   0.05461   0.03867         4       640
+       0/0        0G    0.1006   0.05368   0.03797         1       640
+       0/0        0G       0.1   0.05295   0.03727         4       640
+       0/0        0G   0.09848   0.05219   0.03649         3       640
+       0/0        0G   0.09815   0.05133   0.03578         2       640
+       0/0        0G   0.09884   0.05057   0.03525         2       640
+       0/0        0G   0.09935   0.05151   0.03478        14       640
+       0/0        0G   0.09967   0.05149   0.03427         7       640
+       0/0        0G    0.1001   0.05248   0.03425        19       640
+       0/0        0G    0.1006   0.05224   0.03412         7       640
+       0/0        0G    0.1004   0.05183   0.03354        14       640
+       0/0        0G    0.1007   0.05142   0.03309         4       640
+       0/0        0G    0.1012   0.05118   0.03257         8       640
+       0/0        0G    0.1008   0.05045   0.03211         1       640
+       0/0        0G    0.1003    0.0503   0.03173         6       640
+       0/0        0G    0.1004   0.04999   0.03132         4       640
+       0/0        0G    0.1007   0.04935   0.03082         2       640
+       0/0        0G    0.1011   0.04906   0.03043         5       640
+       0/0        0G   0.09933    0.0483    0.0299         0       640
+       0/0        0G   0.09852   0.04769   0.02943         2       640
+       0/0        0G   0.09833   0.04769    0.0291        11       640
+       0/0        0G   0.09852   0.04816    0.0288        11       640
+       0/0        0G   0.09893    0.0487   0.02853        11       640
+       0/0        0G   0.09937   0.04911   0.02828        13       640
+       0/0        0G   0.09937   0.04936   0.02796         8       640
+       0/0        0G   0.09953   0.04924   0.02765         4       640
+       0/0        0G   0.09974   0.05045   0.02741        20       640
+       0/0        0G   0.09898   0.04978   0.02703         1       640
+       0/0        0G   0.09929   0.04968   0.02676        10       640
+       0/0        0G    0.0989   0.04925   0.02642         3       640
+       0/0        0G   0.09907   0.04909   0.02616         3       640
+       0/0        0G   0.09953   0.04933   0.02599        40       640
+       0/0        0G    0.0999   0.04907   0.02571         5       640
+       0/0        0G   0.09974   0.04866   0.02551         2       640
+       0/0        0G       0.1   0.05132   0.02526        42       640
+       0/0        0G    0.1003   0.05143   0.02499         8       640
+       0/0        0G   0.09893   0.05089   0.02466         0       640
+       0/0        0G   0.09935   0.05153   0.02449        33       640
+       0/0        0G   0.09913   0.05126   0.02423         4       640
+       0/0        0G   0.09936   0.05094   0.02407         5       640
+       0/0        0G   0.09956   0.05065   0.02386         3       640
+       0/0        0G   0.09921   0.05038   0.02363         3       640
+       0/0        0G   0.09938   0.05129   0.02354        17       640
+       0/0        0G   0.09971   0.05087   0.02328         2       640
+       0/0        0G       0.1   0.05109   0.02308        16       640
+       0/0        0G    0.1003   0.05082   0.02287         5       640
+       0/0        0G    0.1005   0.05105   0.02269        11       640
+       0/0        0G    0.0997   0.05061   0.02244         1       640
+       0/0        0G   0.09933   0.05092   0.02223         8       640
+       0/0        0G   0.09891   0.05061    0.0221         4       640
+       0/0        0G   0.09904   0.05057   0.02195         7       640
+       0/0        0G   0.09912   0.05072   0.02181        12       640
+       0/0        0G   0.09868   0.05039   0.02162         2       640
+       0/0        0G   0.09845   0.05004   0.02143         2       640
+       0/0        0G   0.09772   0.04966   0.02122         1       640
+       0/0        0G   0.09787   0.04949   0.02108         4       640
+       0/0        0G    0.0979   0.04915   0.02093         2       640
+       0/0        0G   0.09759   0.04878   0.02076         1       608
+       0/0        0G    0.0969   0.04842   0.02058         2       608
+       0/0        0G   0.09649   0.04812   0.02041         2       576
+       0/0        0G    0.0964    0.0477   0.02025         2       544
+       0/0        0G   0.09663   0.04824   0.02014        16       544
+       0/0        0G   0.09632   0.04792   0.01998         2       544
+       0/0        0G   0.09605   0.04765   0.01981         3       512
+       0/0        0G    0.0963   0.04774   0.01968         9       512
+       0/0        0G   0.09604   0.04742   0.01954         2       512
+       0/0        0G   0.09547   0.04706   0.01937         1       480
+       0/0        0G   0.09491   0.04676   0.01921         2       480
+       0/0        0G   0.09465   0.04662   0.01908         4       480
+       0/0        0G   0.09471   0.04657   0.01897         4       480
+       0/0        0G   0.09499   0.04638   0.01885         3       480
+       0/0        0G   0.09534   0.04639   0.01875        13       480
+       0/0        0G    0.0948   0.04613    0.0186         2       480
+       0/0        0G   0.09493   0.04677    0.0185        14       480
+       0/0        0G   0.09519   0.04704   0.01842        12       480
+       0/0        0G   0.09503   0.04685   0.01829         4       480
+       0/0        0G   0.09538   0.04686    0.0182        11       448
+       0/0        0G   0.09541   0.04685    0.0181         5       448
+       0/0        0G   0.09533    0.0467   0.01801         3       448
+       0/0        0G   0.09481   0.04644   0.01788         2       448
+       0/0        0G   0.09466   0.04624   0.01776         3       448
+       0/0        0G   0.09443   0.04603   0.01763         2       448
+       0/0        0G    0.0947     0.046   0.01755         6       448
+       0/0        0G   0.09422   0.04579   0.01742         3       448
+       0/0        0G   0.09417    0.0456   0.01734         2       448
+       0/0        0G   0.09442   0.04542   0.01726         5       448
+       0/0        0G   0.09433    0.0454   0.01719         4       448
+       0/0        0G    0.0946   0.04568   0.01713        18       416
+       0/0        0G   0.09407   0.04541   0.01701         1       384
+       0/0        0G   0.09426   0.04523   0.01698         2       384
+Trainer 0 epoch 0 box: 0.09425616264343262 obj: 0.04523267224431038 cls: 0.01697690784931183 total: 0.15646573901176453 time: 107.92451024055481
+####################
+Trainer 0 epoch 0 time: 107.9248435497284s batch_num: 127 speed: 0.8498019477513832 s/batch
+####################
+End training on Trainer 0
+Uncaught exception
+Traceback (most recent call last):
+  File "/home/tawfik/SSDData/DeFeC3/coding/fedml/fedml-cv-object-detection/YOLOv5COCO128/main_fedml_object_detection.py", line 18, in <module>
+    fedml_runner = FedMLRunner(args, device, dataset, model, trainer, aggregator)
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/runner.py", line 51, in __init__
+    self.runner = init_runner_func(
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/runner.py", line 67, in _init_simulation_runner
+    runner = SimulatorMPI(
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/simulation/simulator.py", line 95, in __init__
+    FedML_FedAvg_distributed(
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/simulation/mpi/fedavg/FedAvgAPI.py", line 56, in FedML_FedAvg_distributed
+    init_client(
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/simulation/mpi/fedavg/FedAvgAPI.py", line 141, in init_client
+    client_manager.run()
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/simulation/mpi/fedavg/FedAvgClientManager.py", line 26, in run
+    super().run()
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/core/distributed/fedml_comm_manager.py", line 28, in run
+    self.com_manager.handle_receive_message()
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/core/distributed/communication/mpi/com_manager.py", line 90, in handle_receive_message
+    self.notify(msg_params)
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/core/distributed/communication/mpi/com_manager.py", line 126, in notify
+    observer.receive_message(msg_type, msg_params)
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/core/distributed/fedml_comm_manager.py", line 45, in receive_message
+    handler_callback_func(msg_params)
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/simulation/mpi/fedavg/FedAvgClientManager.py", line 44, in handle_message_init
+    self.__train()
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/simulation/mpi/fedavg/FedAvgClientManager.py", line 75, in __train
+    weights, local_sample_num = self.trainer.train(self.args.round_idx)
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/fedml/simulation/mpi/fedavg/FedAVGTrainer.py", line 53, in train
+    self.trainer.train(self.train_local, self.device, self.args)
+  File "/home/tawfik/SSDData/DeFeC3/coding/fedml/fedml-cv-object-detection/YOLOv5COCO128/trainer/yolov5_trainer.py", line 182, in train
+    f"train_box_loss": np.float(epoch_loss[-1, 0]),
+  File "/home/tawfik/anaconda3/envs/fedcv/lib/python3.10/site-packages/numpy/__init__.py", line 324, in __getattr__
+    raise AttributeError(__former_attrs__[attr])
+AttributeError: module 'numpy' has no attribute 'float'.
+`np.float` was a deprecated alias for the builtin `float`. To avoid this error in existing code, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
+    https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations. Did you mean: 'cfloat'?
+0: net_dataidx_map trainer: [ 40  24  86  51   8 108 127  96  73   7  60  10  89  94  30  33   2  59  50  26  22 101  48  68 121 122  91  16  90 118  13  99  76  43  15  93  95  45   3 100   6  92  52  97  62 111  54  85 125  27  18 105  11  66  75  63  84  61   1  56  78 110  42  41   4  17  38   5  53 116  71   0  34  28  55  35  23  74  31
+ 119  57  98 109  32 107  14 106  19  29  49 104  82 124 126  79  69  80  20 120  72  77  25  37  81 112  46 115  39 102  65  58  12 113  88  70  87  36 114  21  83   9 103 123  67  64 117  47  44]
+contribution_alg is not set, assessor is None
+running
+communication backend is alive (loop_forever, sender 0 to receiver 0)
+Cannot handle connection ready.
+receive_message. msg_type = 1, sender_id = 0, receiver_id = 1
+set_model_params
+#######training########### round_id = 0
+Start training on Trainer 0
+Hyperparameters: {'lr0': 0.01, 'lrf': 0.2, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0}, Args: <fedml.arguments.Arguments object at 0x7d4aaf2921a0>
+Optimizer groups: 60 .bias, 60 conv.weight, 57 other
+Epoch gpu_mem box obj cls total targets img_size time
+Trainer_ID: 0, Epoch: 0
+       0/0        0G   0.08858    0.0979   0.07338        17       640
+       0/0        0G    0.1116    0.1352   0.05906         1       640
+       0/0        0G    0.1138     0.122   0.07017         7       640
+       0/0        0G    0.1119    0.1105   0.07725         6       640
+       0/0        0G    0.1053   0.09733   0.06925         3       640
+       0/0        0G    0.1064   0.08704    0.0707         3       640
+       0/0        0G    0.1022   0.07997   0.07032         4       640
+       0/0        0G    0.1046   0.07736   0.06991         9       640
+       0/0        0G    0.1031   0.07119   0.06769         5       640
+       0/0        0G    0.1018   0.06761   0.06435         8       640
+       0/0        0G    0.1035   0.06537   0.06546         8       640
+       0/0        0G    0.1062   0.06144   0.06214         4       640
+       0/0        0G    0.1003   0.05796   0.05958         1       640
+       0/0        0G     0.102   0.05803   0.06114        14       640
+       0/0        0G   0.09761   0.05469   0.05905         1       640
+       0/0        0G   0.09555   0.05271   0.05854         2       640
+       0/0        0G   0.09729   0.05461   0.05799        13       640
+       0/0        0G    0.0987   0.05609   0.05686        13       640
+       0/0        0G   0.09794   0.05451     0.055        16       640
+       0/0        0G   0.09941    0.0542   0.05466         8       640
+       0/0        0G    0.1005   0.05415   0.05422         7       640
+       0/0        0G   0.09982   0.05268   0.05229         2       640
+       0/0        0G    0.1006   0.06274    0.0516        38       640
+       0/0        0G    0.1012   0.06228   0.05089         7       640
+       0/0        0G    0.1013   0.06166    0.0494         6       640
+       0/0        0G    0.1019   0.06429    0.0489        19       640
+       0/0        0G    0.1016   0.06233   0.04717         1       640
+       0/0        0G    0.1018   0.06086    0.0462         2       640
+       0/0        0G   0.09963   0.05938   0.04469         2       640
+       0/0        0G   0.09841   0.05798   0.04337         1       640
+       0/0        0G   0.09758    0.0569   0.04211         2       640
+       0/0        0G   0.09813   0.05591   0.04116         2       640
+       0/0        0G   0.09913   0.05685   0.04034        16       640
+       0/0        0G   0.09895   0.05672   0.03956        21       640
+       0/0        0G   0.09975     0.056   0.03878        12       640
+       0/0        0G   0.09973   0.05507     0.038         6       640
+       0/0        0G   0.09904    0.0542   0.03784         2       640
+       0/0        0G   0.09962    0.0536   0.03766         5       640
+       0/0        0G   0.09979   0.05313   0.03786         4       640
+       0/0        0G   0.09925   0.05218   0.03747         1       640
+       0/0        0G   0.09885   0.05146   0.03693         4       640
+       0/0        0G   0.09722   0.05086   0.03619         3       640
+       0/0        0G   0.09673   0.05017   0.03579         2       640
+       0/0        0G   0.09786   0.04933   0.03539         2       640
+       0/0        0G   0.09834   0.05038   0.03514        14       640
+       0/0        0G   0.09849   0.05068   0.03482         7       640
+       0/0        0G   0.09892   0.05157   0.03452        19       640
+       0/0        0G   0.09928   0.05151   0.03435         7       640
+       0/0        0G   0.09896   0.05139    0.0339        14       640
+       0/0        0G   0.09905   0.05121   0.03344         4       640
+       0/0        0G   0.09957   0.05099   0.03292         8       640
+       0/0        0G   0.09927   0.05025   0.03232         1       640
+       0/0        0G   0.09874   0.05012   0.03181         6       640
+       0/0        0G   0.09875   0.04984   0.03174         4       640
+       0/0        0G   0.09939   0.04913   0.03144         2       640
+       0/0        0G   0.09999   0.04877   0.03107         5       640
+       0/0        0G   0.09823   0.04802   0.03052         0       640
+       0/0        0G   0.09773    0.0474      0.03         2       640
+       0/0        0G   0.09758   0.04742   0.02965        11       640
+       0/0        0G   0.09777   0.04793   0.02945        11       640
+       0/0        0G   0.09817   0.04855   0.02906        11       640
+       0/0        0G   0.09844    0.0497   0.02872        13       640
+       0/0        0G   0.09845   0.05003   0.02851         8       640
+       0/0        0G   0.09861   0.04991   0.02825         4       640
+       0/0        0G   0.09878   0.05128   0.02803        20       640
+       0/0        0G   0.09781   0.05064   0.02765         1       640
+       0/0        0G   0.09805   0.05069   0.02737        10       640
+       0/0        0G   0.09751   0.05041   0.02702         3       640
+       0/0        0G   0.09776   0.05022   0.02677         3       640
+       0/0        0G   0.09822   0.05073   0.02659        40       640
+       0/0        0G   0.09863   0.05044   0.02632         5       640
+       0/0        0G    0.0984   0.05008   0.02606         2       640
+       0/0        0G   0.09865   0.05325   0.02582        42       640
+       0/0        0G   0.09884   0.05349   0.02558         8       640
+       0/0        0G   0.09752   0.05289   0.02524         0       640
+       0/0        0G   0.09796   0.05326   0.02499        33       640
+       0/0        0G   0.09763   0.05295   0.02474         4       640
+       0/0        0G   0.09779   0.05263   0.02451         5       640
+       0/0        0G   0.09798   0.05233    0.0243         3       640
+       0/0        0G   0.09756    0.0521   0.02405         3       640
+       0/0        0G   0.09779   0.05291   0.02384        17       640
+       0/0        0G   0.09805   0.05248   0.02365         2       640
+       0/0        0G   0.09832   0.05281   0.02345        16       640
+       0/0        0G   0.09874    0.0525   0.02326         5       640
+       0/0        0G   0.09898   0.05263   0.02306        11       640
+       0/0        0G   0.09816   0.05222   0.02282         1       640
+       0/0        0G   0.09789   0.05227   0.02261         8       640
+       0/0        0G    0.0975   0.05196   0.02241         4       640
+       0/0        0G   0.09764   0.05193   0.02225         7       640
+       0/0        0G   0.09768   0.05224    0.0221        12       640
+       0/0        0G   0.09731   0.05188    0.0219         2       640
+       0/0        0G   0.09691   0.05156   0.02172         2       640
+       0/0        0G    0.0963   0.05112    0.0215         1       640
+       0/0        0G   0.09639   0.05095   0.02134         4       640
+       0/0        0G    0.0963   0.05064   0.02122         2       640
+       0/0        0G   0.09596   0.05023   0.02108         1       608
+       0/0        0G   0.09533   0.04986    0.0209         2       608
+       0/0        0G   0.09509   0.04949   0.02073         2       576
+       0/0        0G   0.09511   0.04906   0.02056         2       544
+       0/0        0G   0.09534   0.04961   0.02043        16       544
+       0/0        0G   0.09508   0.04922   0.02028         2       544
+       0/0        0G   0.09485   0.04895   0.02014         3       512
+       0/0        0G   0.09503   0.04908   0.02003         9       512
+       0/0        0G   0.09459   0.04878   0.01988         2       512
+       0/0        0G   0.09408   0.04838   0.01971         1       480
+       0/0        0G   0.09352   0.04807   0.01954         2       480
+       0/0        0G    0.0933   0.04788    0.0194         4       480
+       0/0        0G   0.09337   0.04785   0.01928         4       480
+       0/0        0G   0.09356   0.04766   0.01917         3       480
+       0/0        0G   0.09386    0.0478   0.01909        13       480
+       0/0        0G   0.09338   0.04748   0.01893         2       480
+       0/0        0G    0.0935    0.0482   0.01883        14       480
+       0/0        0G   0.09369   0.04866   0.01873        12       480
+       0/0        0G   0.09342   0.04845    0.0186         4       480
+       0/0        0G   0.09375   0.04842   0.01849        11       448
+       0/0        0G   0.09375   0.04842   0.01841         5       448
+       0/0        0G   0.09368   0.04828   0.01832         3       448
+       0/0        0G   0.09315   0.04801   0.01818         2       448
+       0/0        0G   0.09301    0.0478   0.01806         3       448
+       0/0        0G   0.09284   0.04756   0.01795         2       448
+       0/0        0G   0.09308   0.04754   0.01786         6       448
+       0/0        0G   0.09262    0.0473   0.01773         3       448
+       0/0        0G    0.0926    0.0471   0.01764         2       448
+       0/0        0G   0.09286   0.04691   0.01756         5       448
+       0/0        0G   0.09285   0.04682   0.01748         4       448
+       0/0        0G   0.09316   0.04711    0.0174        18       416
+       0/0        0G   0.09267   0.04683   0.01728         1       384
+       0/0        0G   0.09296   0.04663   0.01717         2       384
+Trainer 0 epoch 0 box: 0.09295935183763504 obj: 0.046628452837467194 cls: 0.017173120751976967 total: 0.15676093101501465 time: 94.94220995903015
+####################
+Trainer 0 epoch 0 time: 94.94249510765076s batch_num: 127 speed: 0.7475787279174084 s/batch
+####################
+End training on Trainer 0
+receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+handle_message_receive_model_from_server.
+set_model_params
+#######training########### round_id = 1
+Start training on Trainer 0
+Hyperparameters: {'lr0': 0.01, 'lrf': 0.2, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0}, Args: <fedml.arguments.Arguments object at 0x7d4aaf2921a0>
+Optimizer groups: 60 .bias, 60 conv.weight, 57 other
+Epoch gpu_mem box obj cls total targets img_size time
+Trainer_ID: 0, Epoch: 0
+       0/0        0G    0.1342   0.07303  0.007269         7       640
+       0/0        0G    0.1268    0.0446  0.006538         1       640
+       0/0        0G    0.1237   0.06986  0.006639         7       640
+       0/0        0G    0.1227   0.06604  0.006728         6       640
+       0/0        0G    0.1198   0.06465  0.006342         3       640
+       0/0        0G    0.1171   0.05988  0.006448         3       640
+       0/0        0G    0.1092   0.06037   0.00624         4       640
+       0/0        0G    0.1106   0.06156  0.006548        10       640
+       0/0        0G    0.1065   0.05872  0.006294         5       640
+       0/0        0G    0.1086    0.0572  0.006468         5       640
+       0/0        0G    0.1101   0.05577  0.006566         8       640
+       0/0        0G    0.1119   0.05305   0.00652         4       640
+       0/0        0G    0.1067   0.04987  0.006631         1       640
+       0/0        0G     0.108    0.0486  0.006524        19       640
+       0/0        0G    0.1044   0.04579  0.006202         1       640
+       0/0        0G    0.1037   0.04423  0.006248         2       640
+       0/0        0G     0.104   0.05003  0.006287        14       640
+       0/0        0G    0.1057   0.05067  0.006188        13       640
+       0/0        0G    0.1068   0.05124  0.006188        13       640
+       0/0        0G    0.1081   0.05018  0.006087         8       640
+       0/0        0G     0.109    0.0495  0.006061         5       640
+       0/0        0G    0.1057     0.048  0.005824         2       640
+       0/0        0G    0.1065   0.05665  0.005869        38       640
+       0/0        0G     0.107   0.05632  0.005897         8       640
+       0/0        0G    0.1057   0.05588  0.005848         6       640
+       0/0        0G    0.1066   0.05757  0.005831        19       640
+       0/0        0G    0.1055   0.05597  0.005652         1       640
+       0/0        0G    0.1065   0.05444  0.005623         2       640
+       0/0        0G    0.1045   0.05292  0.005446         2       640
+       0/0        0G    0.1024   0.05155  0.005303         1       640
+       0/0        0G    0.1008   0.05066   0.00524         2       640
+       0/0        0G    0.1015   0.04979  0.005243         2       640
+       0/0        0G     0.102   0.05108  0.005299        12       640
+       0/0        0G    0.1018   0.05047  0.005277        22       640
+       0/0        0G     0.102   0.04973  0.005289         3       640
+       0/0        0G    0.1028   0.04914  0.005315         8       640
+       0/0        0G    0.1011   0.04828   0.00525         2       640
+       0/0        0G    0.1017   0.04775  0.005239         5       640
+       0/0        0G    0.1023   0.04712  0.005244         4       640
+       0/0        0G    0.1005   0.04632   0.00514         1       640
+       0/0        0G       0.1   0.04571  0.005094         4       640
+       0/0        0G   0.09927   0.04503  0.005086         3       640
+       0/0        0G   0.09981    0.0445  0.005066         2       640
+       0/0        0G    0.1005   0.04383  0.005095         2       640
+       0/0        0G    0.1009   0.04417  0.005119        10       640
+       0/0        0G    0.1004   0.04367  0.005065         4       640
+       0/0        0G    0.1009   0.04445  0.005088        19       640
+       0/0        0G    0.1015   0.04396  0.005126         7       640
+       0/0        0G     0.102   0.04419  0.005145        10       640
+       0/0        0G    0.1019   0.04415  0.005136         4       640
+       0/0        0G    0.1024    0.0442  0.005119         8       640
+       0/0        0G    0.1016   0.04365  0.005111         1       640
+       0/0        0G    0.1017   0.04375  0.005085         6       640
+       0/0        0G    0.1021   0.04329  0.005059         4       640
+       0/0        0G    0.1025   0.04276  0.005001         2       640
+       0/0        0G    0.1028   0.04302  0.005004         5       640
+       0/0        0G     0.101   0.04233  0.004917         0       640
+       0/0        0G    0.1003   0.04182  0.004912         2       640
+       0/0        0G    0.1008   0.04219  0.004922         9       640
+       0/0        0G     0.101   0.04263    0.0049        11       640
+       0/0        0G    0.1013   0.04342  0.004879        11       640
+       0/0        0G    0.1009   0.04463  0.004868        13       640
+       0/0        0G    0.1009   0.04512  0.004858         8       640
+       0/0        0G    0.1011   0.04501  0.004852         4       640
+       0/0        0G    0.1014   0.04639  0.004847        24       640
+       0/0        0G    0.1017   0.04591  0.004836         2       640
+       0/0        0G     0.102   0.04582  0.004823        10       640
+       0/0        0G    0.1012   0.04534  0.004768         3       640
+       0/0        0G    0.1016   0.04505  0.004743         3       640
+       0/0        0G     0.102   0.04643  0.004736        40       640
+       0/0        0G    0.1017   0.04607  0.004703         3       640
+       0/0        0G     0.101   0.04556  0.004655         1       640
+       0/0        0G    0.1012   0.04825  0.004646        42       640
+       0/0        0G    0.1015    0.0484  0.004659         8       640
+       0/0        0G    0.1001    0.0479  0.004597         0       640
+       0/0        0G    0.1005    0.0488  0.004605        33       640
+       0/0        0G    0.1007   0.04857  0.004618         4       640
+       0/0        0G    0.1008    0.0485   0.00462         6       640
+       0/0        0G    0.1008   0.04819  0.004621         3       640
+       0/0        0G       0.1   0.04792  0.004583         3       640
+       0/0        0G    0.1001    0.0488  0.004595        17       640
+       0/0        0G    0.1001   0.04851  0.004592         2       640
+       0/0        0G    0.1003   0.04907  0.004603        16       640
+       0/0        0G    0.1006   0.04892  0.004596         5       640
+       0/0        0G    0.1007   0.04919  0.004592        11       640
+       0/0        0G    0.0998   0.04881  0.004551         1       640
+       0/0        0G   0.09989   0.04908  0.004551         8       640
+       0/0        0G   0.09949   0.04889  0.004534         4       640
+       0/0        0G   0.09955   0.04893   0.00453         7       640
+       0/0        0G   0.09972   0.04926  0.004522        13       640
+       0/0        0G   0.09891   0.04889  0.004488         2       640
+       0/0        0G   0.09873   0.04853  0.004458         2       640
+       0/0        0G   0.09808   0.04812  0.004433         1       640
+       0/0        0G   0.09784   0.04795  0.004412         4       640
+       0/0        0G   0.09766   0.04757  0.004397         2       640
+       0/0        0G   0.09712   0.04722   0.00437         1       608
+       0/0        0G   0.09651   0.04685  0.004334         2       608
+       0/0        0G    0.0959   0.04651    0.0043         2       576
+       0/0        0G   0.09625   0.04613  0.004293         2       544
+       0/0        0G   0.09646   0.04658  0.004295        14       544
+       0/0        0G   0.09633   0.04624  0.004276         2       544
+       0/0        0G   0.09623   0.04607  0.004275         3       512
+       0/0        0G   0.09645   0.04621  0.004278         9       512
+       0/0        0G   0.09581    0.0459  0.004251         2       512
+       0/0        0G    0.0953   0.04561  0.004244         1       480
+       0/0        0G   0.09504   0.04535  0.004228         2       480
+       0/0        0G    0.0947   0.04516  0.004208         4       480
+       0/0        0G   0.09477   0.04512  0.004207         4       480
+       0/0        0G   0.09499   0.04489  0.004244         3       480
+       0/0        0G   0.09528   0.04506  0.004248        11       480
+       0/0        0G   0.09483   0.04485  0.004227         2       480
+       0/0        0G     0.095   0.04538  0.004222        14       480
+       0/0        0G   0.09522   0.04574  0.004219        12       480
+       0/0        0G   0.09483   0.04556  0.004204         4       480
+       0/0        0G   0.09514   0.04542  0.004213        11       448
+       0/0        0G   0.09503   0.04535  0.004205         5       448
+       0/0        0G   0.09514   0.04512  0.004197         3       448
+       0/0        0G   0.09483   0.04494  0.004243         2       448
+       0/0        0G   0.09447   0.04478  0.004225         3       448
+       0/0        0G   0.09426   0.04457  0.004203         2       448
+       0/0        0G   0.09398   0.04435  0.004185         2       448
+       0/0        0G    0.0936   0.04424  0.004165         3       448
+       0/0        0G   0.09357   0.04409   0.00416         2       448
+       0/0        0G    0.0939   0.04385  0.004158         5       448
+       0/0        0G   0.09403    0.0438  0.004151         4       448
+       0/0        0G   0.09431   0.04422  0.004146        18       416
+       0/0        0G   0.09381   0.04397  0.004122         1       384
+       0/0        0G   0.09391    0.0438  0.004132         2       384
+Trainer 0 epoch 0 box: 0.09390640258789062 obj: 0.043798718601465225 cls: 0.004132013767957687 total: 0.14183713495731354 time: 115.01117396354675
+####################
+Trainer 0 epoch 0 time: 115.01170325279236s batch_num: 127 speed: 0.9056039964120219 s/batch
+####################
+End training on Trainer 0
+receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+handle_message_receive_model_from_server.
+set_model_params
+#######training########### round_id = 2
+Start training on Trainer 0
+Hyperparameters: {'lr0': 0.01, 'lrf': 0.2, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0}, Args: <fedml.arguments.Arguments object at 0x7d4aaf2921a0>
+Optimizer groups: 60 .bias, 60 conv.weight, 57 other
+Epoch gpu_mem box obj cls total targets img_size time
+Trainer_ID: 0, Epoch: 0
+       0/0        0G    0.1396   0.04962  0.003498         7       640
+       0/0        0G    0.1392   0.04755  0.001935         1       640
+       0/0        0G    0.1342   0.06481   0.00291         7       640
+       0/0        0G    0.1304   0.06389  0.003516         6       640
+       0/0        0G    0.1257   0.06158  0.004412         3       640
+       0/0        0G    0.1222   0.05686  0.006525         3       640
+       0/0        0G    0.1103   0.05279  0.005997         3       640
+       0/0        0G    0.1117   0.05561  0.005783         9       640
+       0/0        0G    0.1099   0.05647  0.005523         5       640
+       0/0        0G    0.1139   0.05402  0.005314         8       640
+       0/0        0G    0.1144   0.05325  0.005159         7       640
+       0/0        0G    0.1153   0.05132  0.004945         4       640
+       0/0        0G      0.11   0.04799  0.004678         1       640
+       0/0        0G    0.1122   0.04714  0.004569        19       640
+       0/0        0G    0.1073   0.04462  0.004414         1       640
+       0/0        0G    0.1078   0.04278  0.004304         2       640
+       0/0        0G    0.1084   0.04625  0.004204        14       640
+       0/0        0G    0.1095   0.04732  0.004124        13       640
+       0/0        0G    0.1105    0.0469  0.004062        13       640
+       0/0        0G    0.1116   0.04684  0.004023         8       640
+       0/0        0G    0.1118   0.04792  0.004004         7       640
+       0/0        0G    0.1107   0.04622  0.003917         2       640
+       0/0        0G    0.1115   0.05399  0.003898        38       640
+       0/0        0G    0.1122   0.05326  0.003854         8       640
+       0/0        0G    0.1108   0.05234  0.003763         6       640
+       0/0        0G    0.1113   0.05472  0.003743        19       640
+       0/0        0G    0.1089   0.05305  0.003624         1       640
+       0/0        0G    0.1094    0.0518  0.003589         2       640
+       0/0        0G    0.1071   0.05049  0.003493         2       640
+       0/0        0G    0.1059    0.0493  0.003653         1       640
+       0/0        0G    0.1044   0.04819  0.003581         2       640
+       0/0        0G    0.1049   0.04729  0.003581         2       640
+       0/0        0G    0.1055   0.04982  0.003579        15       640
+       0/0        0G    0.1038   0.04874  0.003527        22       640
+       0/0        0G    0.1043   0.04817   0.00352         4       640
+       0/0        0G    0.1047   0.04774  0.003518         8       640
+       0/0        0G    0.1031   0.04682  0.003445         2       640
+       0/0        0G    0.1035   0.04644  0.003452         5       640
+       0/0        0G    0.1042   0.04584  0.003451         4       640
+       0/0        0G    0.1036   0.04491  0.003415         1       640
+       0/0        0G    0.1025    0.0442   0.00337         4       640
+       0/0        0G    0.1017   0.04362  0.003327         3       640
+       0/0        0G    0.1021   0.04314  0.003317         2       640
+       0/0        0G    0.1027   0.04262  0.003347         3       640
+       0/0        0G     0.103   0.04357  0.003332        13       640
+       0/0        0G    0.1033    0.0431  0.003318         5       640
+       0/0        0G    0.1036   0.04437  0.003311        20       640
+       0/0        0G    0.1039   0.04426    0.0033         6       640
+       0/0        0G    0.1045   0.04447  0.003384        10       640
+       0/0        0G    0.1046   0.04419  0.003371         4       640
+       0/0        0G     0.105   0.04422  0.003354         8       640
+       0/0        0G    0.1045   0.04357  0.003317         1       640
+       0/0        0G    0.1041   0.04303  0.003283         6       640
+       0/0        0G    0.1044   0.04247   0.00326         4       640
+       0/0        0G    0.1046   0.04195  0.003245         2       640
+       0/0        0G    0.1051   0.04162  0.003263         5       640
+       0/0        0G    0.1032   0.04096  0.003206         0       640
+       0/0        0G    0.1035   0.04058  0.003192         3       640
+       0/0        0G    0.1032   0.04079  0.003167        11       640
+       0/0        0G    0.1033   0.04156  0.003154        11       640
+       0/0        0G    0.1032   0.04267   0.00314        11       640
+       0/0        0G     0.103    0.0445  0.003125        13       640
+       0/0        0G     0.103   0.04471  0.003117         8       640
+       0/0        0G     0.103    0.0447   0.00311         4       640
+       0/0        0G    0.1033   0.04637  0.003105        24       640
+       0/0        0G    0.1037   0.04589  0.003103         2       640
+       0/0        0G    0.1038   0.04594  0.003101         9       640
+       0/0        0G    0.1031   0.04568  0.003096         3       640
+       0/0        0G    0.1034   0.04543  0.003104         3       640
+       0/0        0G    0.1038   0.04621  0.003105        40       640
+       0/0        0G    0.1033   0.04596  0.003089         3       640
+       0/0        0G    0.1033   0.04561  0.003082         2       640
+       0/0        0G    0.1036   0.04827  0.003079        42       640
+       0/0        0G    0.1036    0.0486  0.003074         8       640
+       0/0        0G    0.1022   0.04808  0.003033         0       640
+       0/0        0G    0.1026   0.04876  0.003022        33       640
+       0/0        0G    0.1025   0.04876  0.003016         4       640
+       0/0        0G    0.1021   0.04857  0.002999         4       640
+       0/0        0G    0.1024   0.04832  0.003002         3       640
+       0/0        0G    0.1021   0.04804   0.00298         3       640
+       0/0        0G    0.1022   0.04906  0.002973        17       640
+       0/0        0G    0.1024   0.04864  0.002956         2       640
+       0/0        0G    0.1026   0.04898  0.002955        16       640
+       0/0        0G    0.1029   0.04882  0.002944         5       640
+       0/0        0G    0.1029    0.0492  0.002941        11       640
+       0/0        0G    0.1022   0.04876  0.002916         1       640
+       0/0        0G    0.1018    0.0489  0.002901         7       640
+       0/0        0G    0.1013    0.0486  0.002886         4       640
+       0/0        0G    0.1014   0.04874  0.002882         7       640
+       0/0        0G    0.1014   0.04926   0.00288        13       640
+       0/0        0G    0.1007   0.04888  0.002861         2       640
+       0/0        0G    0.1003    0.0486   0.00285         2       640
+       0/0        0G   0.09971   0.04824  0.002832         1       640
+       0/0        0G   0.09934   0.04816  0.002821         4       640
+       0/0        0G   0.09901   0.04781  0.002804         2       640
+       0/0        0G   0.09845    0.0475  0.002795         1       608
+       0/0        0G   0.09787   0.04711  0.002774         2       608
+       0/0        0G   0.09721   0.04685  0.002751         2       576
+       0/0        0G   0.09715   0.04646  0.002732         2       544
+       0/0        0G   0.09736   0.04701  0.002736        16       544
+       0/0        0G   0.09713   0.04665  0.002715         2       544
+       0/0        0G    0.0971   0.04644  0.002717         3       512
+       0/0        0G   0.09732   0.04661  0.002714         9       512
+       0/0        0G   0.09693    0.0464  0.002697         2       512
+       0/0        0G   0.09634   0.04605  0.002676         1       480
+       0/0        0G    0.0957   0.04581  0.002658         2       480
+       0/0        0G   0.09553   0.04555  0.002638         4       480
+       0/0        0G   0.09571   0.04547  0.002648         4       480
+       0/0        0G   0.09593   0.04531  0.002676         3       480
+       0/0        0G   0.09618   0.04549   0.00269        12       480
+       0/0        0G   0.09563   0.04532  0.002679         2       480
+       0/0        0G   0.09566   0.04557  0.002681         9       480
+       0/0        0G   0.09591   0.04594  0.002695        13       480
+       0/0        0G   0.09557   0.04596   0.00269         4       480
+       0/0        0G   0.09583   0.04604  0.002697        11       448
+       0/0        0G   0.09587   0.04602  0.002699         5       448
+       0/0        0G   0.09585   0.04594  0.002697         3       448
+       0/0        0G   0.09533   0.04566  0.002683         2       448
+       0/0        0G   0.09508   0.04554  0.002676         3       448
+       0/0        0G   0.09479   0.04533  0.002667         2       448
+       0/0        0G   0.09491   0.04542  0.002672         6       448
+       0/0        0G   0.09455   0.04532  0.002663         3       448
+       0/0        0G    0.0947   0.04511  0.002703         2       448
+       0/0        0G   0.09495   0.04495    0.0027         5       448
+       0/0        0G   0.09472   0.04487  0.002687         4       448
+       0/0        0G   0.09484   0.04543  0.002684        12       416
+       0/0        0G   0.09422    0.0452  0.002669         1       384
+       0/0        0G   0.09445    0.0451  0.002658         2       384
+Trainer 0 epoch 0 box: 0.09444945305585861 obj: 0.045095294713974 cls: 0.0026581271085888147 total: 0.14220288395881653 time: 110.06615900993347
+####################
+Trainer 0 epoch 0 time: 110.06645679473877s batch_num: 127 speed: 0.8666650460460993 s/batch
+####################
+End training on Trainer 0
+receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+handle_message_receive_model_from_server.
+set_model_params
+#######training########### round_id = 3
+Start training on Trainer 0
+Hyperparameters: {'lr0': 0.01, 'lrf': 0.2, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0}, Args: <fedml.arguments.Arguments object at 0x7d4aaf2921a0>
+Optimizer groups: 60 .bias, 60 conv.weight, 57 other
+Epoch gpu_mem box obj cls total targets img_size time
+Trainer_ID: 0, Epoch: 0
+       0/0        0G   0.09464    0.0498  0.001533        17       640
+       0/0        0G   0.09226    0.0292  0.001337         1       640
+       0/0        0G   0.09873   0.06066  0.001971         6       640
+       0/0        0G   0.09926   0.06702   0.00254         6       640
+       0/0        0G   0.09273   0.06244  0.002428         3       640
+       0/0        0G   0.09526   0.05874  0.002903         3       640
+       0/0        0G   0.09259   0.05395  0.002819         4       640
+       0/0        0G   0.09434   0.05821  0.002754         9       640
+       0/0        0G   0.09119    0.0565  0.002639         5       640
+       0/0        0G   0.09499   0.05695  0.002661         8       640
+       0/0        0G   0.09736   0.05546  0.002656         8       640
+       0/0        0G   0.09901   0.05296  0.002626         3       640
+       0/0        0G   0.09404   0.05004  0.002483         1       640
+       0/0        0G   0.09612    0.0507  0.002482        18       640
+       0/0        0G   0.09266   0.04797  0.002343         1       640
+       0/0        0G   0.08918   0.04571  0.002234         1       640
+       0/0        0G   0.09005   0.05064  0.002222        14       640
+       0/0        0G   0.09184   0.05244  0.002252        13       640
+       0/0        0G   0.09126   0.05084  0.002267        16       640
+       0/0        0G   0.09316   0.05025  0.002269         8       640
+       0/0        0G   0.09379   0.05065  0.002263         6       640
+       0/0        0G   0.09068    0.0495  0.002189         2       640
+       0/0        0G   0.09182   0.05916  0.002192        38       640
+       0/0        0G   0.09286    0.0588  0.002196         8       640
+       0/0        0G   0.09256   0.05889  0.002199         6       640
+       0/0        0G   0.09343    0.0615    0.0022        17       640
+       0/0        0G   0.09269   0.05968  0.002132         1       640
+       0/0        0G   0.09427   0.05818  0.002112         2       640
+       0/0        0G   0.09182   0.05718   0.00207         2       640
+       0/0        0G    0.0907   0.05609  0.002049         1       640
+       0/0        0G   0.08989   0.05522  0.002029         2       640
+       0/0        0G   0.09099   0.05423  0.002025         2       640
+       0/0        0G   0.09157   0.05582  0.002034        11       640
+       0/0        0G   0.09172   0.05503  0.002036        22       640
+       0/0        0G   0.09213   0.05465  0.002043         7       640
+       0/0        0G   0.09144   0.05413  0.002024         6       640
+       0/0        0G   0.09036   0.05339  0.002005         2       640
+       0/0        0G   0.09092   0.05318  0.002007         5       640
+       0/0        0G   0.09155   0.05274  0.002013         4       640
+       0/0        0G   0.09081   0.05187  0.001998         1       640
+       0/0        0G   0.09031   0.05145  0.001987         4       640
+       0/0        0G   0.08978   0.05078  0.001982         3       640
+       0/0        0G   0.09034   0.05018  0.001984         2       640
+       0/0        0G   0.09099   0.04962  0.001989         3       640
+       0/0        0G   0.09148   0.05079  0.001999        14       640
+       0/0        0G   0.09119   0.05054  0.001993         5       640
+       0/0        0G   0.09163   0.05184   0.00199        20       640
+       0/0        0G   0.09216   0.05145   0.00199         6       640
+       0/0        0G   0.09264   0.05167  0.001992        10       640
+       0/0        0G   0.09207   0.05135  0.001974         4       640
+       0/0        0G   0.09247   0.05147  0.001973         8       640
+       0/0        0G   0.09252   0.05082  0.001963         1       640
+       0/0        0G   0.09198   0.05066  0.001947         6       640
+       0/0        0G   0.09074   0.04989  0.001929         2       640
+       0/0        0G   0.09117   0.04922  0.001931         2       640
+       0/0        0G   0.09157   0.04935   0.00193         5       640
+       0/0        0G   0.08996   0.04858  0.001896         0       640
+       0/0        0G   0.08939   0.04796  0.001888         2       640
+       0/0        0G   0.08943   0.04779  0.001877        11       640
+       0/0        0G   0.08985   0.04821  0.001884        11       640
+       0/0        0G   0.09028   0.04891  0.001904        11       640
+       0/0        0G   0.09064   0.05033  0.001903        13       640
+       0/0        0G   0.09107   0.05033  0.001894         8       640
+       0/0        0G   0.09119   0.05016  0.001891         4       640
+       0/0        0G   0.09147   0.05148  0.001891        20       640
+       0/0        0G    0.0919   0.05096  0.001903         2       640
+       0/0        0G   0.09229   0.05102  0.001906        10       640
+       0/0        0G   0.09151   0.05051  0.001888         3       640
+       0/0        0G    0.0919   0.05024  0.001893         3       640
+       0/0        0G   0.09231   0.05274    0.0019        35       640
+       0/0        0G   0.09206   0.05229  0.001902         3       640
+       0/0        0G    0.0923    0.0518  0.001896         2       640
+       0/0        0G   0.09259   0.05519  0.001903        42       640
+       0/0        0G   0.09281   0.05546  0.001919         8       640
+       0/0        0G   0.09157   0.05487  0.001893         0       640
+       0/0        0G   0.09198   0.05561  0.001915        33       640
+       0/0        0G   0.09204   0.05541  0.001915         4       640
+       0/0        0G   0.09224   0.05533  0.001916         6       640
+       0/0        0G   0.09253   0.05507  0.001913         3       640
+       0/0        0G   0.09224   0.05487  0.001906         3       640
+       0/0        0G   0.09232   0.05589  0.001903        16       640
+       0/0        0G   0.09239    0.0555  0.001904         2       640
+       0/0        0G   0.09273   0.05572  0.001903        16       640
+       0/0        0G   0.09282   0.05575  0.001902         5       640
+       0/0        0G   0.09297   0.05603  0.001902        11       640
+       0/0        0G   0.09232   0.05563  0.001896         1       640
+       0/0        0G   0.09198   0.05598  0.001888         8       640
+       0/0        0G   0.09174   0.05562  0.001879         4       640
+       0/0        0G   0.09202   0.05553  0.001881         7       640
+       0/0        0G   0.09232   0.05576  0.001881        13       640
+       0/0        0G   0.09181   0.05542  0.001874         2       640
+       0/0        0G   0.09143   0.05509  0.001864         2       640
+       0/0        0G   0.09106   0.05467  0.001853         1       640
+       0/0        0G   0.09067   0.05455  0.001844         4       640
+       0/0        0G   0.09057   0.05416  0.001829         2       640
+       0/0        0G   0.09026   0.05376   0.00182         1       608
+       0/0        0G   0.08966   0.05338  0.001807         2       608
+       0/0        0G   0.08932   0.05303  0.001795         2       576
+       0/0        0G   0.08947   0.05257  0.001787         2       544
+       0/0        0G   0.08978   0.05294  0.001787        16       544
+       0/0        0G   0.08946    0.0526  0.001776         2       544
+       0/0        0G   0.08913   0.05235  0.001771         3       512
+       0/0        0G   0.08935   0.05245  0.001773         8       512
+       0/0        0G   0.08873   0.05213  0.001763         2       512
+       0/0        0G   0.08851   0.05171  0.001751         1       480
+       0/0        0G   0.08822   0.05145  0.001745         2       480
+       0/0        0G    0.0879   0.05128  0.001738         4       480
+       0/0        0G   0.08801   0.05113  0.001737         4       480
+       0/0        0G   0.08823    0.0509  0.001753         3       480
+       0/0        0G   0.08857   0.05077  0.001771         8       480
+       0/0        0G   0.08827   0.05051  0.001761         2       480
+       0/0        0G   0.08845    0.0511  0.001773        14       480
+       0/0        0G   0.08872   0.05144  0.001794        13       480
+       0/0        0G   0.08835   0.05126  0.001784         4       480
+       0/0        0G   0.08867   0.05118  0.001828        11       448
+       0/0        0G    0.0888   0.05116   0.00186         5       448
+       0/0        0G    0.0889     0.051  0.001863         3       448
+       0/0        0G   0.08839   0.05071  0.001853         2       448
+       0/0        0G   0.08802   0.05057  0.001847         3       448
+       0/0        0G   0.08812   0.05031  0.001851         2       448
+       0/0        0G   0.08801   0.05003  0.001844         2       448
+       0/0        0G    0.0876   0.04993  0.001834         3       448
+       0/0        0G   0.08765   0.04971  0.001834         2       448
+       0/0        0G   0.08796   0.04948  0.001835         5       448
+       0/0        0G   0.08773   0.04945   0.00183         4       448
+       0/0        0G   0.08795    0.0503  0.001834        18       416
+       0/0        0G   0.08738   0.05002  0.001823         1       384
+       0/0        0G   0.08763   0.04979  0.001855         2       384
+Trainer 0 epoch 0 box: 0.0876346305012703 obj: 0.0497884601354599 cls: 0.001855367561802268 total: 0.13927847146987915 time: 100.39398121833801
+####################
+Trainer 0 epoch 0 time: 100.39426946640015s batch_num: 127 speed: 0.7905060907048503 s/batch
+####################
+End training on Trainer 0
+receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+handle_message_receive_model_from_server.
+set_model_params
+#######training########### round_id = 4
+Start training on Trainer 0
+Hyperparameters: {'lr0': 0.01, 'lrf': 0.2, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0}, Args: <fedml.arguments.Arguments object at 0x7d4aaf2921a0>
+Optimizer groups: 60 .bias, 60 conv.weight, 57 other
+Epoch gpu_mem box obj cls total targets img_size time
+Trainer_ID: 0, Epoch: 0
+       0/0        0G    0.1331    0.1248  0.002407        12       640
+       0/0        0G    0.1315   0.07141  0.002502         1       640
+       0/0        0G    0.1262   0.08047  0.002104         6       640
+       0/0        0G    0.1191   0.08496  0.002149         6       640
+       0/0        0G    0.1072   0.07646  0.001928         3       640
+       0/0        0G    0.1063   0.06974  0.002007         3       640
+       0/0        0G   0.09895   0.06917  0.001924         4       640
+       0/0        0G   0.09936   0.07081  0.001914         8       640
+       0/0        0G   0.09526   0.06824  0.001837         5       640
+       0/0        0G   0.09511   0.06394  0.001832         8       640
+       0/0        0G   0.09702    0.0625  0.001851         8       640
+       0/0        0G   0.09669   0.06003   0.00184         2       640
+       0/0        0G   0.09289   0.05621  0.001739         1       640
+       0/0        0G     0.095   0.05615  0.001758        19       640
+       0/0        0G    0.0917   0.05307  0.001679         1       640
+       0/0        0G   0.09107   0.05157  0.001666         2       640
+       0/0        0G   0.09241     0.056  0.001674        14       640
+       0/0        0G   0.09425   0.05683  0.001691        13       640
+       0/0        0G   0.09316   0.05524  0.001665        16       640
+       0/0        0G   0.09486   0.05465  0.001657         8       640
+       0/0        0G   0.09591   0.05469  0.001654         7       640
+       0/0        0G   0.09465   0.05347  0.001687         2       640
+       0/0        0G   0.09576    0.0615  0.001696        38       640
+       0/0        0G   0.09623   0.06158  0.001705         8       640
+       0/0        0G   0.09632   0.06199  0.001696         6       640
+       0/0        0G   0.09731   0.06187  0.001716        20       640
+       0/0        0G   0.09542   0.06047  0.001711         1       640
+       0/0        0G    0.0957   0.05925  0.001742         2       640
+       0/0        0G    0.0943   0.05834  0.001722         2       640
+       0/0        0G   0.09174   0.05714  0.001682         1       640
+       0/0        0G   0.09026   0.05632   0.00166         2       640
+       0/0        0G   0.09105   0.05533  0.001654         2       640
+       0/0        0G   0.09198    0.0569  0.001654        16       640
+       0/0        0G   0.09207   0.05615  0.001637        22       640
+       0/0        0G   0.09269   0.05599  0.001643         9       640
+       0/0        0G   0.09311   0.05593  0.001645         8       640
+       0/0        0G   0.09275   0.05518  0.001613         2       640
+       0/0        0G   0.09329   0.05483  0.001607         5       640
+       0/0        0G   0.09392   0.05426  0.001603         4       640
+       0/0        0G   0.09237   0.05329  0.001573         1       640
+       0/0        0G   0.09167    0.0529  0.001552         4       640
+       0/0        0G   0.09022   0.05228  0.001525         3       640
+       0/0        0G   0.09095   0.05157  0.001519         2       640
+       0/0        0G   0.09168   0.05097  0.001522         3       640
+       0/0        0G   0.09205   0.05209  0.001523        13       640
+       0/0        0G   0.09223   0.05252  0.001524         7       640
+       0/0        0G   0.09272   0.05358  0.001525        20       640
+       0/0        0G   0.09313   0.05323  0.001526         6       640
+       0/0        0G   0.09373   0.05365  0.001529        13       640
+       0/0        0G   0.09379   0.05348  0.001524         4       640
+       0/0        0G   0.09404   0.05369  0.001536         8       640
+       0/0        0G   0.09332   0.05303  0.001531         1       640
+       0/0        0G   0.09284   0.05251  0.001519         5       640
+       0/0        0G   0.09287   0.05224  0.001516         4       640
+       0/0        0G   0.09337   0.05155  0.001509         2       640
+       0/0        0G   0.09368   0.05132  0.001514         5       640
+       0/0        0G   0.09203   0.05054  0.001487         0       640
+       0/0        0G   0.09236   0.05014  0.001555         3       640
+       0/0        0G   0.09297   0.05036  0.001562         9       640
+       0/0        0G   0.09315    0.0507  0.001571        10       640
+       0/0        0G   0.09326   0.05194  0.001574        11       640
+       0/0        0G   0.09284   0.05324  0.001568        13       640
+       0/0        0G   0.09289   0.05353  0.001571         8       640
+       0/0        0G   0.09306   0.05343  0.001571         4       640
+       0/0        0G   0.09322   0.05582  0.001575        24       640
+       0/0        0G   0.09365   0.05525   0.00158         2       640
+       0/0        0G   0.09366   0.05518  0.001583         7       640
+       0/0        0G   0.09286   0.05467  0.001566         3       640
+       0/0        0G   0.09303   0.05449  0.001569         3       640
+       0/0        0G   0.09347   0.05588  0.001572        39       640
+       0/0        0G   0.09358   0.05576   0.00157         5       640
+       0/0        0G   0.09356   0.05538  0.001571         2       640
+       0/0        0G   0.09373    0.0593   0.00157        42       640
+       0/0        0G    0.0938   0.05971  0.001573         8       640
+       0/0        0G   0.09255   0.05906  0.001552         0       640
+       0/0        0G    0.0928   0.06036  0.001554        33       640
+       0/0        0G   0.09289   0.06007   0.00155         4       640
+       0/0        0G   0.09307   0.06002  0.001545         7       640
+       0/0        0G   0.09312   0.05982  0.001546         3       640
+       0/0        0G   0.09271   0.05964  0.001541         3       640
+       0/0        0G   0.09275    0.0607   0.00154        16       640
+       0/0        0G   0.09297   0.06025  0.001538         2       640
+       0/0        0G   0.09324   0.06059  0.001536        16       640
+       0/0        0G   0.09335   0.06053  0.001534         5       640
+       0/0        0G   0.09343   0.06092  0.001534        11       640
+       0/0        0G   0.09279    0.0604  0.001532         1       640
+       0/0        0G   0.09286   0.06055  0.001528         8       640
+       0/0        0G   0.09242   0.06024  0.001523         4       640
+       0/0        0G   0.09258   0.06024  0.001521         7       640
+       0/0        0G   0.09262   0.06062   0.00152        12       640
+       0/0        0G   0.09194   0.06016  0.001509         2       640
+       0/0        0G   0.09154   0.05979  0.001502         2       640
+       0/0        0G   0.09095   0.05931   0.00149         1       640
+       0/0        0G   0.09069   0.05907  0.001485         4       640
+       0/0        0G   0.09058   0.05869  0.001483         2       640
+       0/0        0G    0.0901   0.05827  0.001475         1       608
+       0/0        0G   0.08941   0.05788  0.001463         2       608
+       0/0        0G   0.08908   0.05752  0.001458         2       576
+       0/0        0G   0.08949   0.05707  0.001453         2       544
+       0/0        0G   0.08969   0.05755  0.001453        15       544
+       0/0        0G   0.08945    0.0571  0.001452         2       544
+       0/0        0G   0.08915   0.05687  0.001445         3       512
+       0/0        0G   0.08942   0.05684   0.00145         9       512
+       0/0        0G   0.08883   0.05645  0.001439         2       512
+       0/0        0G    0.0884   0.05607  0.001431         1       480
+       0/0        0G   0.08785   0.05573   0.00142         2       480
+       0/0        0G   0.08745   0.05555  0.001411         4       480
+       0/0        0G   0.08756   0.05539  0.001416         4       480
+       0/0        0G   0.08774   0.05517  0.001424         3       480
+       0/0        0G   0.08801   0.05543  0.001434        13       480
+       0/0        0G   0.08743   0.05514  0.001424         2       480
+       0/0        0G   0.08744    0.0555  0.001427        10       480
+       0/0        0G   0.08758    0.0558  0.001431        10       480
+       0/0        0G   0.08721   0.05566  0.001424         4       480
+       0/0        0G   0.08752   0.05568  0.001433        11       448
+       0/0        0G   0.08766   0.05566  0.001441         5       448
+       0/0        0G   0.08782    0.0555  0.001436         3       448
+       0/0        0G    0.0873   0.05518  0.001427         2       448
+       0/0        0G   0.08691   0.05504  0.001421         3       448
+       0/0        0G   0.08677   0.05473  0.001417         2       448
+       0/0        0G   0.08699   0.05469  0.001418         6       448
+       0/0        0G   0.08654   0.05443   0.00141         3       448
+       0/0        0G   0.08636   0.05416  0.001406         2       448
+       0/0        0G   0.08667    0.0539  0.001409         5       448
+       0/0        0G   0.08675   0.05384  0.001408         4       448
+       0/0        0G   0.08693   0.05452  0.001409        16       416
+       0/0        0G    0.0867   0.05422  0.001402         1       384
+       0/0        0G   0.08678   0.05404  0.001404         2       384
+Trainer 0 epoch 0 box: 0.0867815911769867 obj: 0.054038647562265396 cls: 0.0014038931112736464 total: 0.14222413301467896 time: 101.47577095031738
+####################
+Trainer 0 epoch 0 time: 101.47609233856201s batch_num: 127 speed: 0.7990243810368335 s/batch
+####################
+End training on Trainer 0
+__finish
+Handle receive message stopped!
+finished...
