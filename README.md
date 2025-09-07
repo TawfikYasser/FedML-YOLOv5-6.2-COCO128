@@ -21,14 +21,12 @@ This setup supports simulations of horizontal federated learning, allowing resea
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/TawfikYasser/FedML-YOLOv5-6.2-COCO128.git
-cd FedML-YOLOv5-6.2-COCO128
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
 ```
 
-This project is based on yolov5 v6.2. Make sure to clone the YOLOv5 repository inside the project directory.
-
-model/ is ignored in git, so you need to clone it manually.
-
+-> model/ folder is ignored in git, so you need to clone yolov5 repo manually.
+-> I'm using yolov5 6.2 version, so clone it inside the project folder.
 
 2. Create the conda environment and activate it:
 ```bash
